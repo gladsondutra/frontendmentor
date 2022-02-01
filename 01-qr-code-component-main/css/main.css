@@ -378,37 +378,44 @@ template {
   display: none;
 }
 
-/*    ========================================================================== */
+/* CSS CONFIGURATION */
 
 :root {
   --bgColor: hsl(212, 45%, 89%);
-  --h3Color: hsl(218, 44%, 22%);
+  --containerBg: white;
+  --h1Color: hsl(218, 44%, 22%);
   --pColor: hsl(220, 15%, 55%);
+  transition: 300ms ease-in-out;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
+.darkTheme {
+  --bgColor: hsl(212, 27%, 69%);
+  --containerBg: rgb(44, 44, 44);
+  --h1Color: hsl(217, 22%, 93%);
+  --pColor: hsl(220, 30%, 96%);
+  transition: 300ms ease-in-out;
 
+}
 
 body {
   background-color: var(--bgColor);
 }
 
-article {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin: auto;
   width: 100%;
   height: 100%;
 }
 
-div {
+.container {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  height: 380px;
-  width: 260px;
+  background-color: var(--containerBg);
+  height: 450px;
+  width: 300px;
   border-radius: 1rem;
   padding-top: 15px;
 }
@@ -416,26 +423,57 @@ div {
 img {
   border-radius: 0.5rem;
   margin: 0 auto;
-  width: 230px;
+  width: 90%;
 }
 
-h3 {
+h1 {
   font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  color: var(--h3Color);
-  margin: 15px 15px 0;
-  padding: 0;
+  color: var(--h1Color);
+  margin: 25px 20px 0;
   letter-spacing: 1px;
 }
 
 p {
   font-family: 'Outfit', sans-serif;
-  font-weight: 400;
   text-align: center;
   color: var(--pColor);
   font-size: 15px;
-  margin: 15px;
+  margin: 20px;
+}
+
+.toggle-btn {
+  position: absolute;
+  margin: 10px;
   padding: 0;
+  right: 0;
+  border: none;
+  background: none;
+}
+
+.toggle-bg {
+  width: 40px;
+  height: 20px;
+  background-color: var(--containerBg);
+  border-radius: 30px;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--pColor);
+  border-radius: 50%;
+  transition: 300ms ease-in-out;
+}
+
+.toggle-bg.active {
+  background-color: var(--h1Color);
+}
+
+.toggle-bg.active>.toggle-circle {
+  background-color: var(--containerBg);
+  margin-left: 20px;
 }
