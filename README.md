@@ -1,1 +1,0 @@
-Projects to frontendmentor.io challenges.
