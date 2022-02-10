@@ -1,8 +1,7 @@
-@import url("../../reset.css");
+@import url("../../global/reset.css");
 @import url("./fonts.css");
 
 :root {
-  --transition: 200ms ease-in-out;
   --lexendDecaFont: 'Lexend Deca', sans-serif;
   --interFont: 'Inter', sans-serif;
   --mainBgColor: hsl(233, 47%, 7%);
@@ -126,8 +125,6 @@ main {
     background-repeat: no-repeat;
   }
 }
-
-
 
 @media (min-width: 1200px) {
   .container {

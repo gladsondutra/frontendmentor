@@ -1,6 +1,6 @@
 /* RESET AND ELEMENTS SETTINGS */
 
-@import url("../../reset.css");
+@import url("../../global/reset.css");
 
 :root {
   --paleBlue: hsl(225, 100%, 94%);

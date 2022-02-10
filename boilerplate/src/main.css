@@ -1,0 +1,6 @@
+@import url("../../global/reset.css");
+@import url("./fonts.css");
+
+:root {
+  --REPLACE: 'REPLACE';
+}
