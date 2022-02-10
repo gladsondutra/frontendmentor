@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(fonts/Inter-Regular.ttf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(fonts/Inter-Bold.ttf) format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(fonts/LexendDeca-Regular.ttf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(fonts/LexendDeca-Light.ttf) format("opentype");
+  font-weight: 300;
+}
