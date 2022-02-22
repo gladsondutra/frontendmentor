@@ -27,6 +27,7 @@ p {
   font-weight: 400;
   color: var(--transparentWhite);
   line-height: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 main {
@@ -51,8 +52,8 @@ a {
 }
 
 .container-card {
-  padding: 3rem 3.5rem 3rem 2.5rem;
-  max-width: calc(0.6 * 375px);
+  padding: 2.75rem;
+  max-width: calc(0.55 * 375px);
 }
 
 .sedan-card {
@@ -103,7 +104,6 @@ a {
 
   .container-card {
     max-width: calc(0.5 * 375px);
-    padding: 3rem;
   }
 
   .sedan-card {
