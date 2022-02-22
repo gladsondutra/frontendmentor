@@ -91,13 +91,19 @@ a {
 }
 
 @media(min-width: 1200px) {
+  main {
+    height: 100vh;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
   }
 
   .container-card {
-    max-height: calc(0.5 * 100vh);
+    max-width: calc(0.5 * 375px);
+    padding: 3rem;
   }
 
   .sedan-card {
@@ -106,5 +112,15 @@ a {
 
   .luxury-card {
     border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .button {
+    width: 65%;
+    border-radius: 2rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  p {
+    padding-bottom: 4rem;
   }
 }
