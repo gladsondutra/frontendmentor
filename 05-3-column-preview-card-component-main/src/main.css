@@ -2,5 +2,109 @@
 @import url("./fonts.css");
 
 :root {
-  --REPLACE: 'REPLACE';
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+  --transition: 50ms ease-in-out;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--veryLightGray);
+}
+
+h1 {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--veryLightGray);
+}
+
+p {
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  color: var(--transparentWhite);
+  line-height: 1.5rem;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 4rem 1.5rem;
+}
+
+.container-card {
+  padding: 3rem 3.5rem 3rem 2.5rem;
+  max-width: calc(0.6 * 375px);
+}
+
+.sedan-card {
+  background-color: var(--brightOrange);
+  color: var(--brightOrange);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.suvs-card {
+  background-color: var(--darkCyan);
+  color: var(--darkCyan);
+
+}
+
+.luxury-card {
+  background-color: var(--veryDarkCyan);
+  color: var(--veryDarkCyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.button {
+  font-family: 'Lexend Deca';
+  text-align: center;
+  background-color: var(--veryLightGray);
+  width: 50%;
+  border-radius: 2rem;
+  padding: 0.75rem 0.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--veryLightGray);
+  outline: 2px solid;
+  transition: var(--transition);
+}
+
+@media(min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-card {
+    max-height: calc(0.5 * 100vh);
+  }
+
+  .sedan-card {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .luxury-card {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }

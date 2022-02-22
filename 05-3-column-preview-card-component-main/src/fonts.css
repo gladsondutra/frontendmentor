@@ -1,5 +1,11 @@
 @font-face {
-  font-family: 'REPLACE';
-  src: url(fonts/REPLACE.ttf) format("opentype");
-  font-weight: 'REPLACE';
+  font-family: 'Lexend Deca';
+  src: url(fonts/LexendDeca-Regular.ttf) format("opentype");
+  font-weight: '400';
+}
+
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url(fonts/BigShouldersDisplay-Bold.ttf) format("opentype");
+  font-weight: '700';
 }
