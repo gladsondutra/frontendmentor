@@ -1,0 +1,88 @@
+@import url("../../global/reset.css");
+@import url("./fonts.css");
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans';
+  font-size: 18px;
+  background-color: var(--darkCyan);
+  text-align: center;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--veryDarkDesaturatedBlue);
+  margin: 0;
+}
+
+h2 {
+  font-size: inherit;
+}
+
+.metrics-card>span {
+  font-size: 12px;
+}
+
+.age-text,
+.location-text,
+.metrics-card>span {
+  font-weight: 400;
+  color: var(--darkGrayishBlue);
+}
+
+.location-text {
+  font-size: 16px;
+}
+
+hr {
+  height: 0.5px;
+  background-color: var(--darkGray);
+  opacity: 0.2;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: white;
+}
+
+
+
+.container-info {
+  display: grid;
+}
+
+.container-info>h1 {
+  grid-row: 1;
+}
+
+.container-info>span:last-of-type {
+  grid-row: 2;
+}
+
+.container-metrics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-img>img {
+  position: relative;
+  border-radius: 50%;
+  top: -3rem;
+  border: 0.25rem solid white;
+}

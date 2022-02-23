@@ -11,7 +11,7 @@
 }
 
 body {
-  font-size: 15px;
+  font-size: 1rem;
   background-color: var(--veryLightGray);
 }
 
@@ -40,7 +40,7 @@ main {
 
 a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: inherit;
 }
 
@@ -80,7 +80,7 @@ a {
   background-color: var(--veryLightGray);
   width: 50%;
   border-radius: 2rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem 1.75rem;
 }
 
 .button:hover {
@@ -92,10 +92,6 @@ a {
 }
 
 @media(min-width: 1200px) {
-  main {
-    height: 100vh;
-  }
-
   .container {
     display: flex;
     flex-direction: row;
@@ -117,7 +113,6 @@ a {
   .button {
     width: 65%;
     border-radius: 2rem;
-    padding: 0.75rem 0.5rem;
   }
 
   p {
