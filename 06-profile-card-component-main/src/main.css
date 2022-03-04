@@ -1,11 +1,6 @@
 @import url("../../global/reset.css");
 @import url("./fonts.css");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --darkCyan: hsl(185, 75%, 39%);
   --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
@@ -16,20 +11,25 @@
 body {
   font-family: 'Kumbh Sans';
   font-size: 1rem;
-  background-color: var(--darkCyan);
   text-align: center;
   font-weight: 400;
+  min-height: 100vh;
+  background-color: var(--darkCyan);
+  background-image:
+    url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-position:
+    bottom 50vh right 50vw,
+    top 50vh left 50vw;
+  background-repeat: no-repeat;
 }
 
 h1,
 h2 {
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--veryDarkDesaturatedBlue);
   margin: 0;
-}
-
-h2 {
-  font-size: 1.25rem;
 }
 
 .metrics-card>span {
@@ -64,6 +64,8 @@ main {
 }
 
 .container {
+
+  display: grid;
   background-color: white;
   border-radius: 1rem;
   background-size: cover;
@@ -77,8 +79,7 @@ main {
 }
 
 .container-info {
-  position: relative;
-  top: -3rem;
+  margin-top: -3rem;
 }
 
 .profile-img {
@@ -106,4 +107,5 @@ main {
   display: flex;
   justify-content: space-evenly;
   padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
