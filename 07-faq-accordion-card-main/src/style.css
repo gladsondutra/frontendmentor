@@ -22,7 +22,6 @@ body {
   align-items: center;
   height: 100vh;
   font-size: 0.75rem;
-
 }
 
 h1 {
@@ -57,7 +56,7 @@ main {
   width: 95%;
 }
 
-#mobile-img {
+.mobile-woman-img {
   display: none;
 }
 
@@ -137,12 +136,10 @@ input:checked~.faq-question-answer {
   main {
     padding: 2.5rem 2.5rem 2.5rem 0;
     margin: 3rem;
-    transition: all .25s;
   }
 
   .faq-container {
     width: 70%;
-    transition: all .25s;
   }
 
   #desktop-img {
@@ -154,28 +151,40 @@ input:checked~.faq-question-answer {
   main {
     padding: 2rem 2rem 2rem 0;
     margin: 0 2rem;
-    transition: all .25s;
   }
 
   .faq-container {
     width: 75%;
-    transition: all .25s;
   }
 }
 
 @media (max-width: 550px) {
-  main {
-    background-image: url(../images/bg-pattern-mobile.svg);
-    background-size: 80%;
-    background-position: 50% 50%;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0 2rem;
+  body {
+    display: block;
+    height: 100vh;
+    margin: 0;
   }
 
-  .faq-container {
-    padding: 0 1rem 2rem 1rem;
+  .mobile-woman-img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 15rem;
+    top: 2.75rem;
+    z-index: 1;
+  }
+
+  main {
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-position: 50% 0.5rem;
+    background-size: 15rem;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 4rem 0 0 0;
+    position: relative;
+    top: -2rem;
   }
 
   h1 {
@@ -183,20 +192,17 @@ input:checked~.faq-question-answer {
     font-size: 2rem;
   }
 
-  .img-container {
-    overflow: visible;
+  .faq-container {
+    width: 100%;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .faq-container>div {
+    margin: 0 2rem;
   }
 
   #desktop-img {
     display: none;
-  }
-
-  #mobile-img {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    top: -5rem;
   }
 
   .faq-question-title:hover {
