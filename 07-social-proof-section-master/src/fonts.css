@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Spartan MB';
+  src: url(fonts/SpartanMB-Regular.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Spartan MB';
+  src: url(fonts/SpartanMB-Medium.otf) format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Spartan MB';
+  src: url(fonts/SpartanMB-Bold.otf) format("opentype");
+  font-weight: 700;
+}
