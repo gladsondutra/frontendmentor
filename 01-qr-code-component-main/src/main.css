@@ -5,7 +5,6 @@
   --containerBg: white;
   --h1Color: hsl(218, 44%, 22%);
   --pColor: hsl(220, 15%, 55%);
-  --transition: 350ms ease-in-out;
 }
 
 .darkTheme {
@@ -17,7 +16,6 @@
 
 body {
   background-color: var(--bgColor);
-  transition: var(--transition);
 }
 
 main {
@@ -37,7 +35,6 @@ main {
   width: 300px;
   border-radius: 1rem;
   padding-top: 15px;
-  transition: var(--transition);
 }
 
 img {
@@ -53,7 +50,6 @@ h1 {
   color: var(--h1Color);
   margin: 25px 20px 0;
   letter-spacing: 1px;
-  transition: var(--transition);
 }
 
 p {
@@ -62,40 +58,4 @@ p {
   color: var(--pColor);
   font-size: 15px;
   margin: 20px;
-  transition: var(--transition);
-}
-
-.toggle-btn {
-  position: absolute;
-  margin: 10px;
-  padding: 0;
-  right: 0;
-  border: none;
-  background: none;
-}
-
-.toggle-bg {
-  width: 40px;
-  height: 20px;
-  background-color: var(--containerBg);
-  border-radius: 30px;
-  padding: 5px;
-  transition: var(--transition);
-}
-
-.toggle-circle {
-  width: 20px;
-  height: 20px;
-  background-color: var(--pColor);
-  border-radius: 50%;
-  transition: var(--transition);
-}
-
-.toggle-bg.active {
-  background-color: var(--h1Color);
-}
-
-.toggle-bg.active>.toggle-circle {
-  background-color: var(--containerBg);
-  margin-left: 20px;
 }
