@@ -1,3 +1,4 @@
-.gitignore
 todo.txt
-boilerplate
+boilerplate/
+node_modules/
+12-interactive-rating-component-main/

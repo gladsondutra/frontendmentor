@@ -1,0 +1,22 @@
+{
+  "name": "study-frontendmentor",
+  "version": "1.0.0",
+  "description": "Projects Made using just HTML and CSS:",
+  "main": "index.js",
+  "scripts": {
+    "compileSass": "node-sass 12-interactive-rating-component-main/src/style.sass 12-interactive-rating-component-main/src/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gladsondutra/frontendmentor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gladsondutra/frontendmentor/issues"
+  },
+  "homepage": "https://github.com/gladsondutra/frontendmentor#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
